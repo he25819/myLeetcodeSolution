@@ -101,4 +101,29 @@ public class Problem39 {
             }
         }
     }
+
+
+    // 和combinationSum2一样
+    // Runtime: 4 ms, faster than 52.82% of Java online submissions for Combination Sum.
+    //Memory Usage: 39.9 MB, less than 13.34% of Java online submissions for Combination Sum.
+    public List<List<Integer>> combinationSum4(int[] candidates, int target) {
+        List<List<Integer>> list = new ArrayList<>();
+        Arrays.sort(candidates);
+        backtrack4(list, candidates, new ArrayList<Integer>(), target, 0);
+        return list;
+    }
+
+    private void backtrack4(List<List<Integer>> list, int[] candidates, ArrayList<Integer> tempList, int remain, int start) {
+        if (remain < 0)
+            return;
+        if (remain == 0) {
+            list.add(new ArrayList<>(tempList));
+        } else {
+            for (int i = start; i < candidates.length; i++) {
+                tempList.add(candidates[i]);
+                backtrack4(list, candidates, tempList, remain - candidates[i], i);
+                tempList.remove(tempList.size() - 1);
+            }
+        }
+    }
 }
