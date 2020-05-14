@@ -3,15 +3,6 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
-
 public class Problem143 {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -48,4 +39,15 @@ public class Problem143 {
         }
         oldList.get(i).next = null;
     }
+
+
+    private static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
 }
