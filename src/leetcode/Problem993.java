@@ -4,6 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Problem993 {
+    private static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     //Runtime: 1 ms, faster than 69.93% of Java online submissions for Cousins in Binary Tree.
     //Memory Usage: 34.8 MB, less than 100.00% of Java online submissions for Cousins in Binary Tree.
     public boolean isCousins(TreeNode root, int x, int y) {

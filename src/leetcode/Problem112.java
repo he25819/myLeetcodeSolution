@@ -2,7 +2,7 @@ package leetcode;
 
 
 public class Problem112 {
-    public class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
