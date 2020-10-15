@@ -38,6 +38,8 @@ public class Problem97 {
 
     // Approach 4: Using 1D Dynamic Programming
     // https://leetcode.com/problems/interleaving-string/solution/
+    // Runtime: 2 ms, faster than 81.76% of Java online submissions for Interleaving String.
+    //Memory Usage: 36.9 MB, less than 5.81% of Java online submissions for Interleaving String.
     public boolean isInterleave2(String s1, String s2, String s3) {
         if (s3.length() != s1.length() + s2.length()) {
             return false;
