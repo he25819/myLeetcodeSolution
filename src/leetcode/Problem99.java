@@ -63,7 +63,7 @@ public class Problem99 {
     |     *
     |  *
     ------------------------------------------------>
-    挨个比较（inorder），如果当前val小于prev.val，则出现错乱，最多2处错乱（可能只有1处），swap即可。
+    比较相邻的节点（inorder），如果当前val小于prev.val，则出现错乱，最多2处错乱（可能只有1处），swap即可。
     有了思路随便怎么写都很好写了。
 */
     // Runtime: 2 ms, faster than 82.99% of Java online submissions for Recover Binary Search Tree.
