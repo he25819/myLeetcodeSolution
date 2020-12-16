@@ -58,8 +58,8 @@ public class Problem188 {
         for (int i = 0; i <= n; i++) {
             max[i][0][1] = Integer.MIN_VALUE;
         }
-        for (int i = 0; i <= k; i++) {
-            max[0][i][1] = Integer.MIN_VALUE;
+        for (int j = 0; j <= k; j++) {
+            max[0][j][1] = Integer.MIN_VALUE;
         }
 
         for (int i = 1; i <= n; i++) {
