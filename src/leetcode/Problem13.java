@@ -22,38 +22,38 @@ public class Problem13 {
             boolean isCheck = true;
             boolean isPlusPlus = false;
             switch (chars[i]) {
-                case 'V' -> {
+                case 'V':
                     value = 5;
                     isCheck = false;
                     i++;
-                }
-                case 'L' -> {
+                    break;
+                case 'L':
                     value = 50;
                     isCheck = false;
                     i++;
-                }
-                case 'D' -> {
+                    break;
+                case 'D':
                     value = 500;
                     isCheck = false;
                     i++;
-                }
-                case 'M' -> {
+                    break;
+                case 'M':
                     value = 1000;
                     isCheck = false;
                     i++;
-                }
-                case 'I' -> {
+                    break;
+                case 'I':
                     value = 1;
                     isPlusPlus = true;
-                }
-                case 'X' -> {
+                    break;
+                case 'X':
                     value = 10;
                     isPlusPlus = true;
-                }
-                case 'C' -> {
+                    break;
+                case 'C':
                     value = 100;
                     isPlusPlus = true;
-                }
+                    break;
             }
             if (isCheck && i + 1 < chars.length) {
                 int j = i + 1;
