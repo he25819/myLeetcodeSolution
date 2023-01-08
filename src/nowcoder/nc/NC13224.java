@@ -58,6 +58,7 @@ public class NC13224 {
         } else {
             sb.deleteCharAt(sb.length() - 1);
         }
+        // 不知道为何注解掉这行才能AC
         //visited[i] = false;
         return false;
     }
